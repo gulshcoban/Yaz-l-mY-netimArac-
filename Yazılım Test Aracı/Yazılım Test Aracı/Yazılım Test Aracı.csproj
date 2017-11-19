@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E945862-AB89-4EA7-8C07-73F7A322F6B3}</ProjectGuid>
+    <ProjectGuid>{640FCBD7-37F7-4093-B305-CB322FE8B7BC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SoftwareTestingProjectt</RootNamespace>
-    <AssemblyName>SoftwareTestingProjectt</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Yazılım_Test_Aracı</RootNamespace>
+    <AssemblyName>Yazılım Test Aracı</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,55 +45,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmInsertMainProcess.cs">
+    <Compile Include="InsertProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInsertMainProcess.Designer.cs">
-      <DependentUpon>frmInsertMainProcess.cs</DependentUpon>
+    <Compile Include="InsertProcess.Designer.cs">
+      <DependentUpon>InsertProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListOfMainProcess.cs">
+    <Compile Include="ListOfMainProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListOfMainProcess.Designer.cs">
-      <DependentUpon>frmListOfMainProcess.cs</DependentUpon>
+    <Compile Include="ListOfMainProcess.Designer.cs">
+      <DependentUpon>ListOfMainProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInsertProject.cs">
+    <Compile Include="ListOfProjects.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInsertProject.Designer.cs">
-      <DependentUpon>frmInsertProject.cs</DependentUpon>
+    <Compile Include="ListOfProjects.Designer.cs">
+      <DependentUpon>ListOfProjects.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmListOfProjects.cs">
+    <Compile Include="ListOfUserWorkFollow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListOfProjects.Designer.cs">
-      <DependentUpon>frmListOfProjects.cs</DependentUpon>
+    <Compile Include="ListOfUserWorkFollow.Designer.cs">
+      <DependentUpon>ListOfUserWorkFollow.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertProjects.Designer.cs">
+      <DependentUpon>InsertProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserRole.cs" />
-    <EmbeddedResource Include="frmInsertMainProcess.resx">
-      <DependentUpon>frmInsertMainProcess.cs</DependentUpon>
+    <Compile Include="RoleNames.cs" />
+    <Compile Include="UserLogDetails.cs" />
+    <Compile Include="UserLogs.cs" />
+    <Compile Include="UserProcess.cs" />
+    <Compile Include="UserRoles.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="WorkFollow.cs" />
+    <Compile Include="WorkFollowDetails.cs" />
+    <EmbeddedResource Include="InsertProcess.resx">
+      <DependentUpon>InsertProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListOfMainProcess.resx">
-      <DependentUpon>frmListOfMainProcess.cs</DependentUpon>
+    <EmbeddedResource Include="ListOfMainProcess.resx">
+      <DependentUpon>ListOfMainProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInsertProject.resx">
-      <DependentUpon>frmInsertProject.cs</DependentUpon>
+    <EmbeddedResource Include="ListOfProjects.resx">
+      <DependentUpon>ListOfProjects.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmListOfProjects.resx">
-      <DependentUpon>frmListOfProjects.cs</DependentUpon>
+    <EmbeddedResource Include="ListOfUserWorkFollow.resx">
+      <DependentUpon>ListOfUserWorkFollow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertProjects.resx">
+      <DependentUpon>InsertProjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SoftwareTestingProjectt
+namespace Yazılım_Test_Aracı
 {
     static class Program
     {
